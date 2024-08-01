@@ -133,13 +133,13 @@ public class RNInAppBrowser {
     setColor(builder, options, KEY_NAVIGATION_BAR_COLOR, "setNavigationBarColor", "navigation bar");
     setColor(builder, options, KEY_NAVIGATION_BAR_DIVIDER_COLOR, "setNavigationBarDividerColor", "navigation bar divider");
 
-    if(options.hasKey(KEY_DEFAULT_SHARE_MENU_ITEM)){
-      if(options.getBoolean(KEY_DEFAULT_SHARE_MENU_ITEM)){
+    if (options.hasKey(KEY_DEFAULT_SHARE_MENU_ITEM)) {
+      if (options.getBoolean(KEY_DEFAULT_SHARE_MENU_ITEM)) {
         builder.setShareState(CustomTabsIntent.SHARE_STATE_ON);
-      }else{
+      } else {
         builder.setShareState(CustomTabsIntent.SHARE_STATE_OFF);
       }
-    }else{
+    } else {
       builder.setShareState(CustomTabsIntent.SHARE_STATE_OFF);
     }
     
